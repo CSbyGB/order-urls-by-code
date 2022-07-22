@@ -24,9 +24,10 @@ with open (urlFile) as f:
 	for line in f:
 		print(line)
 		print("getting: "+line.strip())	
-		# use verify=False with caution
 		try:
-			response = requests.get(line.strip(), verify=False)
+			# use verify=False with caution
+			# Max 20 seconds to connect to server and max 30 seconds to wait on response
+			response = requests.get(line.strip(), verify=False, timeout=(20, 30))
 			if (response.status_code >= 400) and (response.status_code < 500):
 				f400.write("\nurl: "+line.strip()+" gives code: "+str(response.status_code))
 			if (response.status_code >= 200) and (response.status_code < 300):
