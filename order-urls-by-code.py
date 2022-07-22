@@ -15,6 +15,8 @@ with open (urlFile) as f:
 	for line in f:
 		print(line)
 		print("getting: "+line.strip())	
-		x = requests.get(line.strip())
+		# use verify=False with caution
+		x = requests.get(line.strip(), verify=False)
 		if (x.status_code >= 400) and (x.status_code < 500):
 			f400.write("\nurl: "+line+"gives code: "+str(x.status_code))
+
