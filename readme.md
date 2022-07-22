@@ -6,4 +6,6 @@ I am planning on upgrading it so that it can sort url by response code.
 ## TODO
 
 - [ ] Make it sort url by code an outputing a different file for each family of code (file for all 400, file for all 500, etc)
+- [ ] Handle errors
+  - List of errors to handle: certificate `requests.exceptions.SSLError` `Caused by SSLError(SSLCertVerificationError`
 - [ ] Make a fancy menu with options and all
