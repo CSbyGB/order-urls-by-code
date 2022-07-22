@@ -1,7 +1,13 @@
 # Order url by code
 
-This script has been made to get all 400 response code from a list of url.  
+## What is this
+
+This script will sort urls of a list depending on their response code.  
 I am planning on upgrading it so that it can sort url by response code.
+
+## Usage
+
+`python3 order-urls-by-code.py urls.txt`
 
 ## TODO
 
