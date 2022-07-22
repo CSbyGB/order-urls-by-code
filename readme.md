@@ -9,5 +9,5 @@ I am planning on upgrading it so that it can sort url by response code.
 - [ ] Handle errors
   - List of errors to handle: 
     - [x] certificate `requests.exceptions.SSLError` `Caused by SSLError(SSLCertVerificationError` - done by using `verify=False`
-    - Failed to connect
+    - [ ] Failed to connect
 - [ ] Make a fancy menu with options and all
