@@ -3,7 +3,6 @@
 ## What is this
 
 This script will sort urls of a list depending on their response code.  
-I am planning on upgrading it so that it can sort url by response code.
 
 ## Usage
 
